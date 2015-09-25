@@ -1,5 +1,13 @@
+
 package fr.treeptik.dao;
 
-public class MemberDAO {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+import fr.treeptik.model.*;
+
+@Repository
+public interface MemberDAO extends JpaRepository<Member, Integer> {
+
+	Member findById(int id);
 }
