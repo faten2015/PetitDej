@@ -32,6 +32,9 @@ public class Member implements Serializable {
 	private String firstName;
 	private String lastName;
 	
+	private String login;
+	private String password;
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Team team;
 	
